@@ -50,6 +50,13 @@ function App() {
     setIsPlaying(true);
   }
 
+  const documentHeight = () => {
+    const doc = document.documentElement
+    doc.style.setProperty('--doc-height', `${window.innerHeight}px`)
+   }
+   window.addEventListener('resize', documentHeight)
+   documentHeight()
+
   return (
     <div className="App">
       <div className="container" style={{  backgroundImage: "url(" + video.gif + ")" }}>

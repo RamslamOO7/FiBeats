@@ -18,7 +18,7 @@ function Header() {
                     <RWebShare
                         data={{
                             text: "Checkout this awesome LoFi music website!",
-                            url: "https://fibeats.netlify.app/",
+                            url: "https://RamslamOO7.github.io/fibeats/",
                             title: "FiBeats",
                         }}
                         onClick={() => console.log("shared successfully!")}
