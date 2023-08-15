@@ -1,0 +1,166 @@
+.App {
+  background-color: black;
+  height: 100vh;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+  height: inherit;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.controls{
+  display: flex;
+  gap: 30px;
+  padding-bottom: 40px;
+}
+
+.btn-player{
+  background-color: yellow;
+  border: none;
+  border-radius:5px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  outline: none;
+  font-size: 28px;
+  padding: 0;
+  margin: 0;
+}
+
+.playingText{
+  font-size: 30px;
+  color: white;
+  font-weight: 800;
+  background-color: rgba(0, 0, 0, 0.655);
+  padding: 20px 30px;
+  border-radius: 10px;
+  border: 1px white dotted;
+}
+
+.bufferingText{
+  font-size: 30px;
+  color: white;
+}
+
+/* Put it on the top */
+.header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.236);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  color: white;
+  font-size: 20px;
+}
+
+.brandName{
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.mainMenu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: center;
+  gap: 20px;
+  color: white;
+}
+
+.mainMenu span, .mainMenu a{
+  font-size: 30px;
+  color: white;
+}
+
+@media (max-width: 767px) {
+  .qoutes {
+    display: none;
+  }
+}
+
+.qoutes{
+  max-width: 800px;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+
+.qoutes p {
+  text-shadow: 2px 2px 2px black;
+}
+
+.qoutes h3{
+  text-shadow: 2px 2px 2px black;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* Show Playlist on 50% page */
+
+.PlayListContainer{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80%;
+  background-color: rgba(217, 71, 31, 0.83);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+
+.PlayListItems{
+  display: flex;
+  flex-wrap: wrap;
+  overflow: scroll;
+  justify-content: center;
+}
+
+.PlayListItem{
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px white dotted;
+  margin: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 250px;
+  gap: 10px;
+  text-align: left;
+}
+
+.PlayListItem h4{
+  padding: 0;
+  margin: 0;
+}
+
+.PlayListItem.active{
+  border: 1px yellow dotted;
+  box-shadow: 1px 1px 10px black;
+}
+
+.PlayListItemImageContainer{
+  position: relative;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+/* Playing Text Overlay */
+.PlayListItemImageContainer span{
+  position: absolute;
+  padding: 10px;
+}
