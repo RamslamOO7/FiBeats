@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/fibeats/static/css/main.765697b2.css",
-    "main.js": "/fibeats/static/js/main.1ce2462a.js",
+    "main.js": "/fibeats/static/js/main.bfcb89ae.js",
     "index.html": "/fibeats/index.html",
     "main.765697b2.css.map": "/fibeats/static/css/main.765697b2.css.map",
-    "main.1ce2462a.js.map": "/fibeats/static/js/main.1ce2462a.js.map"
+    "main.bfcb89ae.js.map": "/fibeats/static/js/main.bfcb89ae.js.map"
   },
   "entrypoints": [
     "static/css/main.765697b2.css",
-    "static/js/main.1ce2462a.js"
+    "static/js/main.bfcb89ae.js"
   ]
 }
